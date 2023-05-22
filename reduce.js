@@ -20,7 +20,7 @@ const Pessoas = [
 ]
 
 // bem parecido com o map, mas ele e utiliza o valor de cada item para criar um objeto final com base em alguma regra.
-const pessoasId = Pessoas.reduce((acc, obj) => {
+const pessoasKeys = Pessoas.reduce((acc, obj) => {
     return{
         ...acc,
         [obj.nome]:{
@@ -31,7 +31,7 @@ const pessoasId = Pessoas.reduce((acc, obj) => {
 
 //console.log(pessoasId)
 
-//agora pode buscar sem o find, já que existe um "id"
+//agora pode buscar sem o find, já que existe um "keys"
 console.log(pessoasId.Paulo.idade)
 
 //lembrete evite criar muitas funções anônimas, dê nomes a elas. Assim, caso de erro, fica mais fácil de localizar. 
