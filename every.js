@@ -23,7 +23,7 @@ const Pessoas = [
     }
 ]
 
-//varre toda a Array e retorna verdadeiro ou falso, se encontrar pelo 1 elemento que equivale ao parametro.
-const resultado = Pessoas.some((obj) => obj.idade > 50)
+//Every é quase igual ao some, mas só retorna verdadeiro se todos os elemetos equivale aos parametros
+const resultado = Pessoas.every((obj) => obj.idade > 50)
 
 console.log('resultado:', resultado)
